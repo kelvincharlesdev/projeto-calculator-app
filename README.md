@@ -24,7 +24,7 @@ Projeto foi um desafio intermediário que peguei no FrontEnd Mentor, trata-se de
     - Botão para limpar o último número digitado "DEL"
          
 
-> Acesse a página on-line: <a href="" target=_blank> Calculator app </a>
+> Acesse a página on-line: <a href="https://projeto-calculator-app.vercel.app/" target=_blank> Calculator app </a>
 
 ## 🖱️ A página
 
