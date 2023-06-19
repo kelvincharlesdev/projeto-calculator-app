@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+main .tt .container {
+  max-width: 50rem;
+  width: 100%;
+}
+
+main .container .calc-cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .container .temas-numerico {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+  padding-right: 0.6rem;
+}
+
+main .container .calc-cabecalho .calc-titulo {
+  font-size: 2.5rem;
+  display: flex;
+}
+
+main .container .calc-cabecalho .calc-temas {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+main .container .calc-cabecalho .calc-temas .titulo-temas p {
+  display: flex;
+  font-size: 1rem;
+}
+
+main .container .calc-cabecalho .calc-temas .temas-cores {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 1.5rem;
+  width: 4.5rem;
+  border-radius: 50px;
+}
+
+main .container .calc-cabecalho .calc-temas .temas-cores li button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  height: 1rem;
+  width: 1rem;
+  cursor: pointer;
+}
+
+main .container .calc-cabecalho .calc-temas .temas-cores li .calc-tema1:hover {
+  background-color: hsl(6, 100%, 52%);
+  transition: 0.3s ease-in-out;
+}
+
+main .container .calc-cabecalho .calc-temas .temas-cores li .calc-tema2:hover {
+  background-color: hsl(25, 88%, 54%);
+  transition: 0.3s ease-in-out;
+}
+
+main .container .calc-cabecalho .calc-temas .temas-cores li .calc-tema3:hover {
+  background-color: var(--sombra-tecla-tema-3);
+  transition: 0.3s ease-in-out;
+}
+
+main .container .display {
+  height: 6rem;
+  max-width: 25rem;
+  width: 100%;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  font-size: 3.2rem;
+  display: flex;
+  text-align: end;
+  padding-right: 1rem;
+}
+
+main .container .calc {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  width: 25rem;
+}
+
+main .container .calc .number {
+  border-radius: 0.2rem;
+  height: 3rem;
+}
+
+main .container .calc .rest {
+  grid-column: 1/3;
+}
+
+main .container .calc .igual {
+  grid-column: 3/5;
+}
+
+/*TEMA 1 */
+
+body.tema1 {
+  background-color: var(--background-tema-1);
+}
+
+body.tema1 main .container .temas-numerico,
+body.tema1 main .container .calc-cabecalho .calc-titulo,
+body.tema1 main .container .calc-cabecalho .calc-temas .titulo-temas p {
+  color: var(--cor-del-rest-igual-temas);
+}
+
+body.tema1 main .container .calc-cabecalho .calc-temas .temas-cores {
+  background-color: var(--background-calc-tema-1);
+}
+
+body.tema1
+  main .container .calc-cabecalho .calc-temas .temas-cores li .calc-tema1 {
+  background-color: var(--sombra-igual-tema-1);
+}
+
+body.tema1 main .container .display {
+  background-color: var(--background-display-tema-1);
+  color: var(--cor-del-rest-igual-temas);
+}
+
+body.tema1 main .container .calc {
+  background-color: var(--background-calc-tema-1);
+}
+
+body.tema1 main .container .calc .number {
+  background-color: var(--background-teclas-tema-1);
+  box-shadow: 0 1px 0.5px var(--sombra-teclas-tema-1);
+  color: var(--cor-numeros-tema-1);
+  transition: 0.2s ease-in-out;
+}
+
+body.tema1 main .container .calc .number:hover {
+  background-color: hsl(30, 100%, 99%);
+}
+
+body.tema1 main .container .calc .rest,
+body.tema1 main .container .calc .del {
+  background-color: var(--background-del-reset-tema-1);
+  box-shadow: 0 1px 0.5px var(--sombra-tecla-tema-1);
+  color: var(--cor-del-rest-igual-temas);
+}
+
+body.tema1 main .container .calc .rest:hover,
+body.tema1 main .container .calc .del:hover {
+  background-color: hsl(225, 40%, 67%);
+}
+
+body.tema1 main .container .calc .igual {
+  background-color: var(--background-igual-tema-1);
+  box-shadow: 0 1px 0.5px var(--sombra-igual-tema-1);
+  color: var(--cor-del-rest-igual-temas);
+}
+
+body.tema1 main .container .calc .igual:hover {
+  background-color: hsl(6, 81%, 64%);
+}
+
+/* TEMA 2*/
+
+body.tema2 {
+  background-color: var(--background-tema-2);
+}
+
+body.tema2 main .container .temas-numerico,
+body.tema2 main .container .calc-cabecalho .calc-titulo,
+body.tema2 main .container .calc-cabecalho .calc-temas .titulo-temas p {
+  color: var(--cor-numeros-tema-2);
+}
+
+body.tema2 main .container .calc-cabecalho .calc-temas .temas-cores {
+  background-color: var(--background-calc-tema-2);
+}
+
+body.tema2 main .container .calc-cabecalho .calc-temas .temas-cores li .calc-tema2 {
+  background-color: var(--background-igual-tema-2);
+}
+
+body.tema2 main .container .display {
+  background-color: var(--background-display-tema-2);
+  color: var(--cor-numeros-tema-2);
+}
+
+body.tema2 main .container .calc {
+  background-color: var(--background-calc-tema-2);
+}
+
+body.tema2 main .container .calc .number {
+  background-color: var(--background-teclas-tema-2);
+  box-shadow: 0 1px 0.5px var(--sombra-teclas-tema-2);
+  color: var(--cor-numeros-tema-2);
+}
+
+body.tema2 main .container .calc .number:hover {
+  background-color: hsl(0, 0%, 100%);
+}
+
+body.tema2 main .container .calc .rest,
+body.tema2 main .container .calc .del {
+  background-color: var(--background-del-reset-tema-2);
+  box-shadow: 0 1px 0.5px var(--sombra-tecla-tema-2);
+  color: var(--cor-del-rest-igual-temas);
+}
+
+body.tema2 main .container .calc .rest:hover,
+body.tema2 main .container .calc .del:hover {
+  background-color: hsl(185, 46%, 53%);
+}
+
+body.tema2 main .container .calc .igual {
+  background-color: var(--background-igual-tema-2);
+  box-shadow: 0 1px 0.5px var(--sombra-igual-tema-2);
+  color: var(--cor-del-rest-igual-temas);
+}
+
+body.tema2 main .container .calc .igual:hover {
+  background-color: hsl(25, 90%, 59%);
+}
+
+/*TEMA 3*/
+
+body.tema3 {
+  background-color: var(--background-tema-3);
+}
+
+body.tema3 main .container .temas-numerico,
+body.tema3 main .container .calc-cabecalho .calc-titulo,
+body.tema3 main .container .calc-cabecalho .calc-temas .titulo-temas p {
+  color: var(--background-teclas-tema-3);
+}
+
+body.tema3 main .container .calc-cabecalho .calc-temas .temas-cores {
+  background-color: var(--background-calc-display-tema-3);
+}
+
+body.tema3 main .container .calc-cabecalho .calc-temas .temas-cores li .calc-tema3 {
+  background-color: var(--background-del-reset-tema-3);
+}
+
+body.tema3 main .container .display {
+  background-color: var(--background-calc-display-tema-3);
+  color: var(--background-teclas-tema-3);
+}
+
+body.tema3 main .container .calc {
+  background-color: var(--background-calc-display-tema-3);
+}
+
+body.tema3 main .container .calc .number {
+  background-color: var(--background-res-tema-3);
+  box-shadow: 0 1px 0.5px var(--sombra-res-tema-3);
+  color: var(--background-teclas-tema-3);
+}
+
+body.tema3 main .container .calc .number:hover {
+  background-color: hsl(268, 48%, 37%);
+}
+
+body.tema3 main .container .calc .rest,
+body.tema3 main .container .calc .del {
+  background-color: var(--background-del-reset);
+  box-shadow: 0 1px 0.5px var(--sombra-del-reset);
+  color: var(--cor-del-rest-igual-temas);
+}
+
+body.tema3 main .container .calc .rest:hover,
+body.tema3 main .container .calc .del:hover {
+  background-color: hsla(268, 66%, 57%, 0.993);
+}
+
+body.tema3 main .container .calc .igual {
+  background-color: var(--background-del-reset-tema-3);
+  box-shadow: 0 1px 0.5px var(--sombra-tecla-tema-3);
+  color: var(--cor-igual-tema-3);
+}
+
+body.tema3 main .container .calc .igual:hover {
+  background-color: hsl(176, 77%, 75%);
+}
+

@@ -1,0 +1,55 @@
+:root{
+    
+    --cor-del-rest-igual-temas : hsl(0, 0%, 100%);
+
+     /*TEMA 1*/
+    --background-tema-1: hsl(222, 26%, 31%);
+    --background-calc-tema-1: hsl(223, 31%, 20%);
+    --background-display-tema-1:  hsl(224, 36%, 15%);
+
+    --background-del-reset-tema-1: hsl(225, 21%, 49%);
+    --sombra-tecla-tema-1: hsl(224, 28%, 35%);
+
+    --background-igual-tema-1: hsl(6, 63%, 50%);
+    --sombra-igual-tema-1:hsl(6, 70%, 34%);
+
+    --background-teclas-tema-1: hsl(30, 25%, 89%);
+    --sombra-teclas-tema-1: hsl(28, 16%, 65%);
+
+    --cor-numeros-tema-1: hsl(221, 14%, 31%);
+    
+     /*TEMA 2*/
+     --background-tema-2: hsl(0, 0%, 90%);
+     --background-calc-tema-2: hsl(0, 5%, 81%);
+     --background-display-tema-2:  hsl(0, 0%, 93%);
+ 
+     --background-del-reset-tema-2: hsl(185, 42%, 37%);
+     --sombra-tecla-tema-2: hsl(185, 58%, 25%);
+ 
+     --background-igual-tema-2: hsl(25, 98%, 40%);
+     --sombra-igual-tema-2: hsl(25, 99%, 27%);
+ 
+     --background-teclas-tema-2:  hsl(45, 7%, 89%);
+     --sombra-teclas-tema-2: hsl(35, 11%, 61%);
+ 
+     --cor-numeros-tema-2: hsl(60, 10%, 19%);
+
+
+      /*TEMA 3*/
+
+      --background-tema-3:  hsl(268, 75%, 9%);
+      --background-calc-display-tema-3: hsl(268, 71%, 12%);
+      
+      --background-del-reset: hsl(281, 89%, 26%);
+      --sombra-del-reset: hsl(285, 91%, 52%);
+  
+      --background-del-reset-tema-3: hsl(176, 100%, 44%);
+      --sombra-tecla-tema-3: hsl(177, 92%, 70%);
+  
+      --background-res-tema-3: hsl(268, 47%, 21%);
+      --sombra-res-tema-3: hsl(290, 70%, 36%);
+  
+      --background-teclas-tema-3:  hsl(52, 100%, 62%);
+      --cor-igual-tema-3:   hsl(198, 20%, 13%);
+  
+}
