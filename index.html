@@ -1,78 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="src/img/favicon-32x32.png"
-      type="image/x-icon"
-    />
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/img/favicon-32x32.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="src/css/reset.css" />
-    <link rel="stylesheet" href="src/css/variables.css" />
-    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/variables.css">
+    <link rel="stylesheet" href="src/css/style.css">
 
     <title>Frontend Mentor - Calculator app</title>
-  </head>
-  <body class="tema1">
+</head>
+<body class="tema1">
     <main>
-      <section>
-        <div class="container">
-          <ul class="temas-numerico">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-          </ul>
+        <section >
+            <div class="container">
+                <ul class="temas-numerico">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
 
-          <div class="calc-cabecalho">
-            <div class="calc-titulo">
-              <p>calc</p>
+                <div class="calc-cabecalho">
+
+                    <div class="calc-titulo">
+                        <p>calc</p>
+                    </div>
+
+                    <div class="calc-temas">
+                        
+                        <div class="titulo-temas">
+                            <p>THEME</p>
+                        </div>
+
+                        <ul class="temas-cores">
+                            <li><button class="calc-tema1"></button></li>
+                            <li><button class="calc-tema2"></button></li>
+                            <li><button class="calc-tema3"></button></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <input class="display" type="text" disabled >
+
+                <div class="calc">
+
+                    <input class="number" type="button" value="7">
+                    <input class="number" type="button" value="8">
+                    <input class="number" type="button" value="9">
+                    <input class=" del" type="button" value="DEL">
+
+                    
+                    
+                    <input class="number" type="button" value="4">
+                    <input class="number" type="button" value="5">
+                    <input class="number" type="button" value="6">
+                    <input class="number" type="button" value="+">
+
+                    
+                    <input class="number" type="button" value="1">
+                    <input class="number" type="button" value="2">
+                    <input class="number" type="button" value="3">
+                    <input class="number" type="button" value="-">
+
+                    
+                    <input class="number" type="button" value=".">
+                    <input class="number" type="button" value="0">
+                    <input class="number" type="button" value="/">
+                    <input class="number x" type="button" value="*">
+
+
+                    <input class="rest" type="button" value="RESET">
+                    <input class="igual" type="button" value="=">
+        
+                    
+                </div>
             </div>
-
-            <div class="calc-temas">
-              <div class="titulo-temas">
-                <p>THEME</p>
-              </div>
-
-              <ul class="temas-cores">
-                <li><button class="calc-tema1"></button></li>
-                <li><button class="calc-tema2"></button></li>
-                <li><button class="calc-tema3"></button></li>
-              </ul>
-            </div>
-          </div>
-
-          <input class="display" type="text" disabled />
-
-          <div class="calc">
-            <input class="number" type="button" value="7" />
-            <input class="number" type="button" value="8" />
-            <input class="number" type="button" value="9" />
-            <input class="del" type="button" value="DEL" />
-
-            <input class="number" type="button" value="4" />
-            <input class="number" type="button" value="5" />
-            <input class="number" type="button" value="6" />
-            <input class="number" type="button" value="+" />
-
-            <input class="number" type="button" value="1" />
-            <input class="number" type="button" value="2" />
-            <input class="number" type="button" value="3" />
-            <input class="number" type="button" value="-" />
-
-            <input class="number" type="button" value="." />
-            <input class="number" type="button" value="0" />
-            <input class="number" type="button" value="/" />
-            <input class="number x" type="button" value="*" />
-
-            <input class="rest" type="button" value="RESET" />
-            <input class="igual" type="button" value="=" />
-          </div>
-        </div>
-      </section>
+        </section>
     </main>
 
     <script src="src/js/index.js"></script>
-  </body>
+</body>
 </html>
+

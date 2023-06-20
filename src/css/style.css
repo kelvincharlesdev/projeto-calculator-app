@@ -101,9 +101,9 @@ main .container .display {
 main .container .calc {
   margin-top: 1.5rem;
   padding: 1rem;
-  gap: 1rem;
   border-radius: 0.5rem;
   display: grid;
+  grid-gap: 1rem;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
   width: 25rem;
@@ -114,8 +114,13 @@ main .container .calc .number {
   height: 3rem;
 }
 
+font{
+  width: 100% !important;
+  display: flex;
+}
 main .container .calc .rest {
   grid-column: 1/3;
+  
 }
 
 main .container .calc .igual {
@@ -179,6 +184,8 @@ body.tema1 main .container .calc .igual {
   background-color: var(--background-igual-tema-1);
   box-shadow: 0 1px 0.5px var(--sombra-igual-tema-1);
   color: var(--cor-del-rest-igual-temas);
+
+  
 }
 
 body.tema1 main .container .calc .igual:hover {
